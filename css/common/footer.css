@@ -1,0 +1,104 @@
+/* footer.css */
+/* 팔도- 공통 영역 */
+
+
+/* #footBox ================ */
+#footBox {
+	width: 100%; height: auto;
+	/* background-color:#222; */
+}
+.foot_area {
+	width: 100%; height: auto;
+}
+.foot_bg {
+	width: 100%; height: 150px;
+	background-image: url(../../img/1x/bg_center_02_long.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: 100% 100%;
+}
+.foot_info {
+	float:left;
+	width: 100%; min-width: 940px;
+	height: auto;
+	padding: 20px; box-sizing: border-box;
+	background-color:#3C3C3C;
+}
+.foot_text {
+	width: 800px; height:auto;
+}
+.foot_text p {
+	margin-bottom:5px;
+	font-size: 0.875rem; color:#fff;
+	text-align: left;
+}
+.cs_group {
+	width: 100%; height: 30px;
+}
+	.cs_group >p {
+		display: inline-block;
+		margin-right: 20px;
+		font-size: 1rem; font-weight: bold;
+	}
+.site_group {
+	width: 100%; height: 24px;
+}
+	.site_group >p  {
+		display: inline-block;
+		position: relative;
+		margin-right: 18px;
+	}
+	.site_group >p:after, 
+	.site_group >p::after{
+		content:"";
+		position: absolute; top:3px; left :-9px; 
+		width: 2px; height: 80%; 
+		background-color:#fff;
+	}
+	.site_group >p:nth-child(1):after, 
+	.site_group >p:nth-child(1)::after{
+		display:none;
+	}
+	/* .site_group p a {
+		display: inline-block; width: 100%; height: 100%;
+	} */
+.company_group {
+	width: 100%; height: 24px;
+}
+	.company_group >p {
+		display: inline-block;
+		margin-right: 10px;
+	}
+.copyright_group {
+	width: 100%; height: 24px;
+}
+.sns_zone{
+	float:right;
+	width: 150px; height: 40px;
+	transform: translateY(-100px);
+}
+.sns_zone ul {
+	width: 100%; height: 100%;
+}
+.sns_zone li {
+	float: left;
+	width: 40px; height: 40px;
+	margin-right: 10px;
+	background-image: url(../../img/sns_icon.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position-y: 5px;
+}
+.sns_zone li:nth-child(1){
+	background-position-x: 5px;
+}
+.sns_zone li:nth-child(2){
+	background-position-x: -75px;
+}
+.sns_zone li:nth-child(3){
+	background-position-x: -112px;
+}
+.sns_zone li:last-child{margin-right:0}
+.sns_zone li a {
+	display: block; width: 100%; height: 100%;
+}

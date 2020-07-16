@@ -1,0 +1,256 @@
+/* product_detail_p.css */
+/* 반응형 */
+/* 디바이스: pc 1200px~ */
+
+@media all and (min-width: 1201px){
+	/* @media 시작태그 */
+
+
+	#contBox {
+		width: 100%; height: auto; min-height: 500px; 
+		padding-top: 110px; padding-bottom: 100px; 
+		background-color:rgba(231, 232, 214, 0.5);
+		/* background-color:#ddd; */
+	}
+	
+	.cont_area {
+		width: 100%; max-width: 1200px;
+		height: auto;
+		margin:auto;
+		padding: 20px; padding-top: 100px; box-sizing: border-box
+	}
+	
+	/* 요약 내용 =================== */
+	.summary_cont {
+		width: 100%; min-width: 1200px; height:550px;
+		margin-bottom: 80px;
+		padding: 15px; box-sizing: border-box;
+		background-color:rgba(231, 232, 214, 0.5);
+		background-color:rgba(255, 255, 255, 0.9);
+		color:#333;
+	}
+	
+	/* 이미지 */
+	.summary_img {
+		float:left;
+		width: 40%; height: 100%; 	
+	}
+	.big_img {
+		width: 100%; height: 400px; min-width: 400px;
+		border: 2px solid #B2B2B2; box-sizing: border-box;
+		margin-bottom: 10px;
+		background-color:#fff;
+		/* background-image: url(../../img/product/bibims_con_001.png); */
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: auto;
+	}
+	.thum_img {
+		width: 100%; height: 90px;
+	}
+	.thum_img >ul {width: 100%; height: 100%;}
+	.thum_img >ul li {
+		float:left;
+		width:90px; height: 100%;
+		margin-right: 10px; 
+		background-color:#ddd;
+	}
+	.thum_img >ul li a {
+		display: block; width: 100%; height: 100%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 150% auto;
+	}
+	
+	/* 텍스트 */
+	.summary_text {
+		float:right;
+		width: 55%; height: 35%;
+		margin-bottom: 10px;
+		/* background-color:#dfd; */
+		font-size: 1.2rem;
+	
+	}
+	.badge {
+		width: 60px; height:auto; 
+		background-color:#E42612;
+		color:#fff; font-weight: bold;
+		border-radius: 5px;
+		text-align: center;
+	}
+	.name {
+		margin:10px 0; 
+		font-size: 2.5rem; font-weight: bold;
+	}
+	.description {}
+	
+	
+	/* 영양정보 */
+	.nutrient {
+		float:right;
+		width: 55%; min-width: 600px; height: 60%;
+		/* background-color:#dad; */
+	}
+	.nutrient_title {
+		width: 100%; height: 30px;
+		font-size: 1.5rem; font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.nutrient_cont {
+		width: 100%; height: auto;
+	}
+	.nutrient_cont >dl {
+		float:left;
+		width: 33.333333%; height: 70px;
+		border:1px solid #b2b2b2; box-sizing: border-box; 
+		/* margin-right: 10px; margin-bottom: 10px; */
+		/* background-color:#aaf; */
+		font-size: 1.1rem;
+		text-indent: 10px; line-height: 70px;
+	}
+	.nutrient_cont >dl:nth-child(n+4){ border-top:0; }
+	.nutrient_cont >dl:nth-child(n+1){ border-right:0; }
+	.nutrient_cont >dl:nth-child(3n){	border-right: 1px solid #b2b2b2; }
+	
+	.nutrient_cont >dl dt {
+		float:left;
+	}
+	.nutrient_cont >dl dd {
+		float:left;
+	}
+	
+	
+	
+	
+	
+	
+	/* 자세한 내용 ============================= */
+	.detail_cont {
+		width: 100%; height:auto; min-height: 1000px; 
+		padding-top: 30px;
+	
+	}
+	.detail_cont h2 {
+		width: 200px; height: 80px; 
+		font-size: 2rem;
+		margin:auto;
+		text-align: center;
+	}
+	
+	.detail_part_01 {
+		width: 100%; height:auto; min-height: 500px; 
+		margin-bottom: 100px;
+	}
+	.detail_part_01 .img_ice {
+		width: 100%; height: 500px;
+		background-image: url(../../../img/2020_bibim_02.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: 50% 50%;
+	}
+	.detail_part_01 p {
+		width: 500px; height:50px;
+		margin:auto;
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 80px; margin-top: 80px; 
+	}
+	.detail_part_01 .icon_wrap {
+		width: 700px; height: auto; 
+		margin:auto;
+	}
+	.detail_part_01 .icon_wrap li {
+		float:left;
+		width: 220px; height: 330px;
+		margin-right: 20px; 
+		border-radius: 10px;
+		background-color:#E42612;
+	}
+	.detail_part_01 .icon_wrap li:last-child{margin-right:0;}
+	.detail_part_01 .icon_wrap li .icon_img {
+		width: 100%; height: 50%;
+		background-repeat: no-repeat;
+		background-size: 40% auto;
+		background-position: 50% 50%;
+	}
+	.detail_part_01 .icon_wrap li:nth-child(1) .icon_img {background-image:url(../../../img/bibimen_ic_01.svg)}
+	.detail_part_01 .icon_wrap li:nth-child(2) .icon_img {background-image:url(../../../img/bibimen_ic_02.svg)}
+	.detail_part_01 .icon_wrap li:nth-child(3) .icon_img {background-image:url(../../../img/bibimen_ic_03.svg)}
+	
+	.detail_part_01 .icon_wrap .icon_text {
+		width: 90%; height: 45%;
+		margin:auto; padding: 5px; box-sizing: border-box;
+		text-align:center; 
+		background-color:#fff;
+		border-radius: 10px;
+	}
+	.detail_part_01 .icon_wrap .icon_text span {
+		display:block; 
+		width: 100%; height: 10px;
+		font-size: 1.2rem;
+		font-weight: bold; margin-bottom: 4px;
+	}
+	
+	.recipe_tip {
+		width: 1200px; height: 300px;
+		padding-top: 40px; box-sizing: border-box;
+		background-color:#fff;
+	}
+	.recipe_tip >ul {
+		width: 860px; height: auto;
+		margin:auto; 
+	}
+	.recipe_tip >ul li {
+		float:left;
+		width: 200px; height: 200px; 
+		margin-right: 20px;  
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: 50% 50%;
+		text-align: center;
+	}
+	.recipe_tip >ul li span {line-height: 450px;}
+	.recipe_tip >ul li:nth-child(1) {background-image: url(../../../img/recipe_tip_01.png);}
+	.recipe_tip >ul li:nth-child(2) {background-image: url(../../../img/recipe_tip_02.png);}
+	.recipe_tip >ul li:nth-child(3) {background-image: url(../../../img/recipe_tip_03.png);}
+	.recipe_tip >ul li:nth-child(4) {background-image: url(../../../img/recipe_tip_04.png);
+	margin-right: 0;}
+	
+	
+	
+	/* ----------- */
+	.detail_part_02 p {
+		width: 500px; height:50px;
+		margin:auto;
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 80px; margin-top: 80px; 
+	}
+	.nutrient_img {
+		width: 900px; height: 1350px;
+		margin:auto;
+		background-image: url(../../../img/nutrient_table.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: 50% 50%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* @media 종료태그 */
+}

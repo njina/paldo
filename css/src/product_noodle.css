@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* product_noodle.css */
+/* 팔도스토리 > 기업소개 */
+/* 디바이스 환경: 940px 에 최적화 */
+
+
+/* header,footer 영역은 공통적으로 제어 */
+@import url('../common/wrap.css');
+
+/* ======================== */
+
+@import url('../rwd/common/header_m.css');
+@import url('../rwd/common/header_t.css');
+@import url('../rwd/common/header_l.css');
+@import url('../rwd/common/header_p.css');
+
+/* ======================== */
+
+@import url('../rwd/page/product_noodle_m.css');
+@import url('../rwd/page/product_noodle_t.css');
+@import url('../rwd/page/product_noodle_l.css');
+@import url('../rwd/page/product_noodle_p.css');
+
+/* ======================== */
+
+@import url('../rwd/common/footer_m.css');
+@import url('../rwd/common/footer_t.css');
+@import url('../rwd/common/footer_l.css');
+@import url('../rwd/common/footer_p.css');
+
+/* ======================== */
+

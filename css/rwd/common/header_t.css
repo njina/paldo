@@ -1,0 +1,140 @@
+/* header_t.css */
+/* 반응형 */
+/* 디바이스: tablet 641~940px */
+
+@media all and (min-width: 641px) and (max-width: 940px){
+	/* @media 시작태그 */
+	
+
+/* #headBox ================ */
+#headBox {
+	position: fixed; top:0; left:0; z-index:1000;
+	width: 100%; height: 60px;
+	background-color:rgba(255,255,255,1);
+	box-shadow: 0.1rem 0.1rem 0.5rem #b2b2b2;
+	/* background-color:rgba(255,200,200,1); */
+}
+.head_area{
+	width: 100%; max-width: 940px;
+	height: 100%; 
+	padding: 10px 40px; box-sizing: border-box;
+	margin:auto;
+}
+h1{
+	float:left; 
+	width: 80px; height: 40px;
+	margin:auto;
+	/* background-color:#76BC21; */
+	background-image:url(../../../img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 0;
+}
+h1 a {
+	display: block; width: 100%; height: 100%;
+}
+
+#gnbBox {
+	position: relative;
+	float:right;
+	width: 30px; height: auto;
+	background-color:#fff;
+}
+.gnb_btn {
+	float: right;
+	width: 30px; height: 30px;
+	margin-top: 5px;  
+	background-image:url('../../../img/gnb_btn.svg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 0 50%;
+}
+.gnb_btn > button {display: block; width: 100%; height: 100%;}
+
+.gnb_area {
+	display: none;
+	position: absolute; top:-10px; right:-100%;
+	width: 100%; height: auto; min-height: 600px;
+	padding-top: 80px; box-sizing: border-box;
+	background-color:#fff;
+	box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.5);
+	transition: 500ms all ease;
+}
+.gnb_area.active {
+	right:0;
+}
+
+.gnb_area .gnb_close_btn {
+	position: absolute;  top: 1rem; right: 2rem;
+	width: 40px; height: 40px;
+	background-color:#fff;
+	border: 2px solid #333;
+	line-height: 35px;
+	text-align: center;
+	margin:auto;
+	border-radius: 10px;
+}
+.gnb_close_btn > button {
+	display: block; width: 100%; height: 100%;
+}
+
+.gnb_area ul{
+	position: relative; z-index: 0;
+	width: 100%; height:auto;
+}
+.gnb_area li {
+	width:100%; height: auto;
+}
+.gnb_area li:last-child{margin-right:0;}
+
+.gnb_area dl {
+	width: 100%; height: auto;
+	text-align: center;
+}
+
+	.gnb_area dt {
+		width: 100%; height: 40px;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	.gnb_area dt a {
+		display: block; width: 100%; height: 100%;
+		line-height: 40px;
+	}
+	.gnb_area dd {
+		display: none;
+		width: 100%; height: auto; max-height: 160px;
+		font-size: 1.1rem;
+		/* background-color:#fff; */
+		
+	}
+		.gnb_area dd ul {
+			width:100%; height: auto;
+		}
+			.gnb_area dd li {
+				width: 100%; height: 30px;
+				line-height: 30px; 
+				
+			}
+			.gnb_area dd li:last-child{margin-bottom:0;}
+
+			.gnb_area dd li a {
+				display: block; width: 100%; height: 100%;
+				color:#333;
+			}
+
+/* active시 */
+#gnbBox li:focus dt,
+#gnbBox li:hover dt,
+#gnbBox li.active dt {font-weight: bold; color: #E43D30}
+/* #gnbBox li.active dd {font-weight: bold; background-color:#fff; color:#E43D30} */
+
+
+
+
+
+
+
+
+	/* @media 종료태그 */
+}

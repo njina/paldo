@@ -1,0 +1,30 @@
+/* product_detail.css */
+/* 제품소개 > 각 제품 설명 페이지 */
+/* 디바이스 환경: 940px 에 최적화 */
+
+
+/* header,footer 영역은 공통적으로 제어 */
+@import url('../common/wrap.css');
+
+/* ======================== */
+
+@import url('../rwd/common/header_m.css');
+@import url('../rwd/common/header_t.css');
+@import url('../rwd/common/header_l.css');
+@import url('../rwd/common/header_p.css');
+
+/* ======================== */
+
+@import url('../rwd/page/product_detail_m.css');
+@import url('../rwd/page/product_detail_t.css');
+@import url('../rwd/page/product_detail_l.css');
+@import url('../rwd/page/product_detail_p.css');
+
+/* ======================== */
+
+@import url('../rwd/common/footer_m.css');
+@import url('../rwd/common/footer_t.css');
+@import url('../rwd/common/footer_l.css');
+@import url('../rwd/common/footer_p.css');
+
+/* ======================== */

@@ -1,0 +1,10 @@
+/* header.css */
+/* 팔도- 공통 영역 */
+
+@import url('../rwd/common/header_m.css');
+@import url('../rwd/common/header_t.css');
+@import url('../rwd/common/header_l.css');
+@import url('../rwd/common/header_p.css');
+
+
+

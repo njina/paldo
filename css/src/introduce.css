@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* introduce.css */
+/* 팔도스토리 > 기업소개 */
+
+
+/* header,footer 영역은 공통적으로 제어 */
+@import url('../common/wrap.css');
+
+/* ======================== */
+
+@import url('../rwd/common/header_m.css');
+@import url('../rwd/common/header_t.css');
+@import url('../rwd/common/header_l.css');
+@import url('../rwd/common/header_p.css');
+
+/* ======================== */
+
+@import url('../rwd/page/introduce_m.css');
+@import url('../rwd/page/introduce_t.css');
+@import url('../rwd/page/introduce_l.css');
+@import url('../rwd/page/introduce_p.css');
+
+/* ======================== */
+
+@import url('../rwd/common/footer_m.css');
+@import url('../rwd/common/footer_t.css');
+@import url('../rwd/common/footer_l.css');
+@import url('../rwd/common/footer_p.css');
+
+

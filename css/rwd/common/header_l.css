@@ -1,0 +1,139 @@
+/* header_l.css */
+/* 반응형  */
+/* 디바이스: laptop 941~1200px */
+
+@media all and (min-width: 941px) and (max-width: 1200px){
+	/* @media 시작태그 */
+
+
+/* #headBox ================ */
+#headBox {
+	position: fixed; top:0; left:0; z-index:1000;
+	width: 100%; height: 110px;
+	padding: 15px 50px; box-sizing: border-box;
+	background-color:rgba(255,255,255,1);
+}
+#headBox:before,
+#headBox::before {
+	position: absolute; top: 110px; right: 0px; z-index: -1;
+	content: ""; width: 100%; height: 0;
+	border-top: 0 solid #80BA27;
+	background-color:rgba(245,245,245,1);
+
+	transition: all 500ms ease;
+}
+#headBox.active:before,
+#headBox.active::before {
+	height: 300px;
+	border-top: 2px solid #80BA27;
+}
+.head_area{
+	width: 100%; min-width: 940px; max-width: 1200px;
+	height: 100%;
+	margin:auto;
+}
+.gnb_btn {display: none;}
+.gnb_area .gnb_close_btn {display: none; }
+h1{
+	float:left;
+	width: 180px; height: 100%;
+	/* background-color:#76BC21; */
+	background-image:url(../../../img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+}
+h1 a {
+	display: block; width: 100%; height: 100%;
+}
+#gnbBox {
+	position: relative;
+	float: right;
+	width: 650px; height: auto; min-height: 40px;
+	padding-bottom:20px; box-sizing: border-box;
+	margin-top: 15px;
+}
+
+
+#gnbBox ul{
+	position: relative; z-index: 0;
+	width: 100%; height:auto;
+}
+#gnbBox li {
+	float:left;
+	width:24%; height: auto;
+	margin-right: 1%;
+}
+#gnbBox li:last-child{margin-right:0;}
+
+#gnbBox dl {
+	width: 100%; height: auto;
+	text-align: center;
+}
+
+	#gnbBox dt {
+		width: 100%; height: 40px;
+		font-size: 1.2rem;
+	}
+	#gnbBox dt a {
+		display: block; width: 100%; height: 100%;
+		line-height: 40px;
+	}
+	#gnbBox dd {
+		display: none;
+		width: 100%; height: auto;
+		margin-top: 20px;
+		font-size: 1.1rem;
+		/* background-color:#fff; */
+		
+	}
+		#gnbBox dd ul {
+			width:100%; height: auto;
+			padding-top: 50px; box-sizing: border-box;
+		}
+			#gnbBox dd li {
+				width: 100%; height: 30px;
+				line-height: 30px; 
+				margin-bottom: 20px;
+				
+			}
+			#gnbBox dd li:last-child{margin-bottom:0;}
+
+			#gnbBox dd li a {
+				display: block; width: 100%; height: 100%;
+				color:#333;
+			}
+
+
+/* active시 */
+#gnbBox li:focus dt,
+#gnbBox li:hover dt,
+#gnbBox li.active dt {font-weight: bold; color: #E43D30}
+/* #gnbBox li.active dd {font-weight: bold; background-color:#fff; color:#E43D30} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* @media 종료태그 */
+}

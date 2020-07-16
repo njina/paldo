@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* main.css */
+/* 팔도 메인페이지 */
+
+/* header,footer 영역은 공통적으로 제어 */
+@import url('../common/wrap.css');
+
+/* ======================== */
+
+@import url('../rwd/common/header_m.css');
+@import url('../rwd/common/header_t.css');
+@import url('../rwd/common/header_l.css');
+@import url('../rwd/common/header_p.css');
+
+/* ======================== */
+
+@import url('../rwd/page/main_m.css');
+@import url('../rwd/page/main_t.css');
+@import url('../rwd/page/main_l.css');
+@import url('../rwd/page/main_p.css');
+
+/* ======================== */
+
+@import url('../rwd/common/footer_m.css');
+@import url('../rwd/common/footer_t.css');
+@import url('../rwd/common/footer_l.css');
+@import url('../rwd/common/footer_p.css');
